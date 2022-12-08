@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Update</title>
+<style>
+body
+{
+	background-color: #00b36b;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>Update Book Details</h1>
+<form action="Update" method="post">
+ <label for="book_code">Book Code:</label>
+ <input type="text" id="bk_code" name="bk_code" pattern="[b]{1}[k]{1}[1-9]{1}[0-9]{2}" title="Bk_code start with 'bk' and 3 numeric digits..Which is greater than 100.."><br><br>
+ <label for="book_title">Book_Title:</label>
+ <input type="text" id="bk_name" name="bk_name"  pattern=".{3,}" title="Book Title Contains only character values"><br><br>
+ <label for="author">Author : </label>
+ <input type="text" id="author" name="author"  pattern=".{3,}" title="Author Contains only character values"><br><br>
+ <label for="author">Book_Edition  : </label>
+ <input type="text" id="bk_edition" name="bk_edition" pattern="^[0-9]" title="bk_edition Contains only Numeric values"><br><br>
+ <label for="author">Book_Price  : </label>
+  <input type="text" id="price" name="price" pattern="\d+(\.\d{2})?" title="Price Contains only Numeric values"><br><br>
+ <input type="submit" value="Submit">
+ <input type="button" value="Go Back" onclick="history.back()">
+</form>
+</center>
+</body>
+</html>
